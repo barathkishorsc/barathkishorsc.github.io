@@ -1,1 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Barath Kishor S C - Electronics and Communication Engineering Undergraduate at Kongu Engineering College.">
+  <meta name="keywords" content="Barath Kishor S C, Barath Kishor S C, Portfolio, ECE, Kongu Engineering College">
+  <meta name="author" content="Barath Kishor S C">
+  <title>Barath Kishor S C</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/photo.jpg">
+</head>
+
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-monogram">BK</span>
+        <span class="brand-text">Barath Kishor S C</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i data-lucide="moon" class="theme-icon moon-icon"></i>
+          <i data-lucide="sun" class="theme-icon sun-icon"></i>
+        </button>
+
+        <!-- Resume Dropdown (Preview & Download) -->
+        <div class="nav-dropdown" id="resume-dropdown">
+          <button type="button" class="btn btn-outline nav-resume-btn dropdown-toggle" id="resume-dropdown-toggle"
+            aria-haspopup="true" aria-expanded="false" title="Resume Options">
+            <i data-lucide="file-text" class="btn-icon"></i>
+            <span>Resume</span>
+            <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+          </button>
+          <div class="dropdown-menu" id="resume-dropdown-menu">
+            <button type="button" class="dropdown-item resume-modal-trigger" id="dropdown-preview-trigger">
+              <i data-lucide="eye" class="dropdown-item-icon"></i>
+              <span>Preview</span>
+            </button>
+            <a href="assets/Barath_Kishor_Resume.pdf" download="Barath_Kishor_Resume.pdf" class="dropdown-item"
+              id="dropdown-download-link">
+              <i data-lucide="download" class="dropdown-item-icon"></i>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <span>Open to Internships & Collaborative Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Barath Kishor S C</span>
+          </h1>
+
+          <div class="hero-dynamic-role">
+            <span class="role-prefix">I am an</span>
+            <span class="role-text" id="role-text">Electronics & Communication Engineer</span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Electronics and Communication Engineering undergraduate at <strong>Kongu Engineering College</strong> (Class
+            of 2028).
+            Passionate about architecting hardware-software solutions,precision PCB layouts with Altium Designer, and
+            responsive web systems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i data-lucide="arrow-up-right" class="btn-icon"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i data-lucide="mail" class="btn-icon"></i>
+            </a>
+            <a href="assets/Barath_Kishor_Resume.pdf" download="Barath_Kishor_Resume.pdf" class="btn btn-glass"
+              title="Download Barath's Resume PDF">
+              <i data-lucide="download" class="btn-icon"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Connect Metadata -->
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <i data-lucide="map-pin" class="meta-icon"></i>
+              <span>Anthiyur, Tamil Nadu, India</span>
+            </div>
+            <a href="mailto:barathkishorsc@gmail.com" class="meta-item hover-link">
+              <i data-lucide="mail" class="meta-icon"></i>
+              <span>barathkishorsc@gmail.com</span>
+            </a>
+            <a href="tel:+918248830003" class="meta-item hover-link">
+              <i data-lucide="phone" class="meta-icon"></i>
+              <span>+91 82488 30003</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Photo & Interactive Visual -->
+        <div class="hero-visual">
+          <div class="photo-card-wrapper">
+            <!-- Decorative Cyber Orbs & Rings -->
+            <div class="photo-glow"></div>
+            <div class="photo-frame">
+              <img src="assets/photo.jpg" alt="Barath Kishor S C - Professional Profile Photo" class="profile-photo"
+                loading="eager">
+              <div class="photo-inner-glow"></div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-college">
+              <div class="badge-icon-wrap">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Kongu Engg. College</span>
+                <span class="badge-sub">B.Tech/B.E. ECE '28</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-cgpa">
+              <div class="badge-icon-wrap">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">7.6 / 10 CGPA</span>
+                <span class="badge-sub">Academic Standing</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-focus">
+              <div class="badge-icon-wrap">
+                <i data-lucide="cpu"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">PCB Design</span>
+                <span class="badge-sub"> Altium Designer,Kicad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Bridging physical hardware engineering with cloud intelligence and software
+            applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="narrative-heading">
+              Engineering with curiosity, building with precision.
+            </h3>
+            <p class="narrative-p">
+              I am an <strong>Electronics and Communication Engineering undergraduate</strong> at <strong>Kongu
+                Engineering College</strong> (graduating in 2028). My engineering philosophy revolves around solving
+              practical real-world problems through tactile hardware, IoT, Cloud Intelligence and Software.
+            </p>
+            <p class="narrative-p">
+              I have hands-on experience designing PCB Designs and modern web applications.
+            </p>
+
+            <div class="narrative-tags">
+              <span class="spec-tag"><i data-lucide="layers"></i> PCB Design (Altium)</span>
+              <span class="spec-tag"><i data-lucide="code-2"></i> Web Applications</span>
+              <span class="spec-tag"><i data-lucide="users"></i> Event Management</span>
+            </div>
+          </div>
+
+          <!-- Highlight Metric Counters -->
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon-box">
+                <i data-lucide="cpu"></i>
+              </div>
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Major IoT Innovations</div>
+              <div class="stat-desc">Wearable health/safety & smart energy meter</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-box">
+                <i data-lucide="file-check-2"></i>
+              </div>
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Paper & Project Presentations</div>
+              <div class="stat-desc">Scientium 2025, Ideathon 2025 & Fest</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-box">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="stat-number">7.6</div>
+              <div class="stat-label">Engineering CGPA</div>
+              <div class="stat-desc">Kongu Engineering College, Erode</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-box">
+                <i data-lucide="languages"></i>
+              </div>
+              <div class="stat-number">2</div>
+              <div class="stat-label">Languages Spoken</div>
+              <div class="stat-desc">English, Tamil (Native)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Pillars of Expertise -->
+        <div class="pillars-container">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="circuit-board"></i>
+            </div>
+            <h4> PCB Designing </h4>
+            <p>Designing high-performance Printed Circuit Boards with precise schematic captures and optimized layouts
+              using Altium Designer and Kicad, ensuring signal integrity and manufacturability across single-layer,
+              double-layer, and complex multi-layer boards.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="wifi"></i>
+            </div>
+            <h4>Embedded Systems</h4>
+            <p> designing and developing custom Printed Circuit Boards (PCBs) with Altium Designer and KiCad, creating
+              professional single-layer, double-layer, and multi-layer boards optimized for functionality and
+              manufacturability.
+
+              Building intelligent Internet of Things (IoT) devices that bridge the physical world with digital
+              platforms, integrating sensors, microcontrollers, and wireless connectivity to enable real-time
+              monitoring, control, and data analytics.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i data-lucide="layout"></i>
+            </div>
+            <h4>Software & Modern Web</h4>
+            <p>Writing performant C/C++ firmware, crafting clean HTML/CSS/JavaScript interfaces, and building
+              user-centric tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="skills-stack-header">
+          <h2 class="skills-stack-title">
+            A stack built for <span class="gradient-text">Engineering</span>
+          </h2>
+          <p class="skills-stack-subtitle">
+            Technologies, hardware tools, and platforms I use daily to design circuits, program firmware, and build
+            applications.
+          </p>
+        </div>
+
+        <div class="skills-stack-container">
+          <!-- Row 1: Hardware & PCB Design -->
+          <div class="skill-stack-row">
+            <div class="skill-category-label">
+              <span class="dash-prefix">—</span> HARDWARE & PCB
+            </div>
+            <div class="skill-badges-group">
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#E5A823" />
+                    <path d="M6 18L12 6L18 18H14.5L12 12.5L9.5 18H6Z" fill="#121826" />
+                  </svg>
+                </span>
+                <span class="pill-text">Altium Designer</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#314CB0" />
+                    <path d="M7 6H10V18H7V6ZM14.5 6L10.5 12L15 18H18L13 11.5L17.5 6H14.5Z" fill="#3FACFF" />
+                  </svg>
+                </span>
+                <span class="pill-text">KiCad</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                    <path d="M11 9h4a2 2 0 0 0 2-2V3" />
+                    <circle cx="9" cy="9" r="2" />
+                    <path d="M7 21v-4a2 2 0 0 1 2-2h4" />
+                    <circle cx="15" cy="15" r="2" />
+                  </svg>
+                </span>
+                <span class="pill-text">PCB Design & Layout</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </span>
+                <span class="pill-text">Schematic Capture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: Languages -->
+          <div class="skill-stack-row">
+            <div class="skill-category-label">
+              <span class="dash-prefix">—</span> LANGUAGES
+            </div>
+            <div class="skill-badges-group">
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+                  </svg>
+                </span>
+                <span class="pill-text">English</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6" />
+                  </svg>
+                </span>
+                <span class="pill-text">Tamil (Native)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3: Web Technologies -->
+          <div class="skill-stack-row">
+            <div class="skill-category-label">
+              <span class="dash-prefix">—</span> WEB TECHNOLOGIES
+            </div>
+            <div class="skill-badges-group">
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#E34F26" />
+                    <path
+                      d="M6 5l1.3 14 4.7 1.3 4.7-1.3L18 5H6zm9.8 4.2h-6l.2 2.2h5.6l-.4 4.2-3.2.9-3.2-.9-.2-2h1.6l.1 1 1.7.5 1.7-.5.2-2.1H7.8L7.3 7h9.7l-.2 2.2z"
+                      fill="#FFFFFF" />
+                  </svg>
+                </span>
+                <span class="pill-text">HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#1572B6" />
+                    <path
+                      d="M6 5l1.3 14 4.7 1.3 4.7-1.3L18 5H6zm9.8 4.2h-6l.2 2.2h5.6l-.4 4.2-3.2.9-3.2-.9-.2-2h1.6l.1 1 1.7.5 1.7-.5.2-2.1H7.8L7.3 7h9.7l-.2 2.2z"
+                      fill="#FFFFFF" />
+                  </svg>
+                </span>
+                <span class="pill-text">CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#F7DF1E" />
+                    <path
+                      d="M7.5 16.2c.4.7 1 1.1 1.9 1.1 1 0 1.6-.5 1.6-1.5v-5.2h1.8v5.2c0 2-1.2 2.9-3.3 2.9-1.6 0-2.6-.8-3.1-2l1.1-.5zm6.5-1.2c.5.8 1.2 1.2 2.1 1.2.9 0 1.4-.4 1.4-1.1 0-.7-.5-1-1.6-1.4l-.5-.2c-1.6-.7-2.7-1.5-2.7-3.2 0-1.6 1.2-2.8 3.2-2.8 1.4 0 2.5.5 3.2 1.8l-1.2.7c-.4-.7-1-.1-2-.1-.9 0-1.4.4-1.4 1.1 0 .6.4.9 1.5 1.3l.5.2c1.8.7 2.8 1.6 2.8 3.3 0 1.9-1.4 3-3.4 3-1.9 0-3.1-.9-3.7-2.2l1.4-.5z"
+                      fill="#000000" />
+                  </svg>
+                </span>
+                <span class="pill-text">JavaScript</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                    <path d="M3 9h18M9 21V9" />
+                  </svg>
+                </span>
+                <span class="pill-text">Responsive Layouts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 4: Leadership & Others -->
+          <div class="skill-stack-row">
+            <div class="skill-category-label">
+              <span class="dash-prefix">—</span> LEADERSHIP & OTHERS
+            </div>
+            <div class="skill-badges-group">
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                    <line x1="16" x2="16" y1="2" y2="6" />
+                    <line x1="8" x2="8" y1="2" y2="6" />
+                    <line x1="3" x2="21" y1="10" y2="10" />
+                  </svg>
+                </span>
+                <span class="pill-text">Event Management (AI Club)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="3" rx="2" />
+                    <line x1="8" x2="16" y1="21" y2="21" />
+                    <line x1="12" x2="12" y1="17" y2="21" />
+                  </svg>
+                </span>
+                <span class="pill-text">Technical Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Applied Engineering</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Real-world IoT and embedded prototypes built to solve critical industry
+            challenges.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-group">
+                <span class="p-badge p-badge-featured">Featured Innovation</span>
+                <span class="p-date">Nov 2025 – Dec 2025</span>
+              </div>
+              <div class="project-icon-top">
+                <i data-lucide="shield-alert"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Integrated Wearable Device for Real-Time Health, Gas & Fatigue Monitoring</h3>
+              <p class="project-overview">
+                An industrial worker safety monitoring wearable engineered to prevent workplace accidents by
+                simultaneously tracking biological vitals and dangerous toxic gas exposure in harsh environments.
+              </p>
+
+              <div class="project-specs-list">
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Real-time monitoring of <strong>heart rate, body temperature, and blood oxygen
+                      (SpO2)</strong>.</span>
+                </div>
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Detection of <strong>hazardous ambient gases</strong> with immediate automated threshold
+                    alerts.</span>
+                </div>
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Fatigue detection algorithm utilizing motion and physiological data with buzzer, vibration, and
+                    wireless telemetry.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">ESP32 / MCU</span>
+                <span class="tech-tag">Pulse Oximetry</span>
+                <span class="tech-tag">Gas Sensor</span>
+                <span class="tech-tag">Motion / IMU</span>
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">Wireless Telemetry</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary project-modal-trigger" data-project="wearable">
+                <span>View Full Specifications</span>
+                <i data-lucide="external-link" class="btn-icon"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-badge-group">
+                <span class="p-badge p-badge-iot">Smart Grid / IoT</span>
+                <span class="p-date">August 2025</span>
+              </div>
+              <div class="project-icon-top">
+                <i data-lucide="zap"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart Energy Meter (IoT-Based)</h3>
+              <p class="project-overview">
+                A connected electrical consumption monitor powered by ESP32 that captures high-fidelity power metrics
+                and streams live telemetry to the cloud for real-time analytics and anomaly alerts.
+              </p>
+
+              <div class="project-specs-list">
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Measures <strong>voltage, current, active power, and energy consumption (kWh)</strong> in real
+                    time.</span>
+                </div>
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Integrated with <strong>Blynk IoT Cloud</strong> for historical trend analysis and live mobile
+                    dashboarding.</span>
+                </div>
+                <div class="spec-item">
+                  <i data-lucide="check-circle-2" class="spec-check"></i>
+                  <span>Proactive threshold alerts via Wi-Fi to identify peak overloads and curb unnecessary energy
+                    waste.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Blynk IoT</span>
+                <span class="tech-tag">Wi-Fi Telemetry</span>
+                <span class="tech-tag">Current / Voltage Sensors</span>
+                <span class="tech-tag">Embedded C</span>
+                <span class="tech-tag">Energy Analytics</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary project-modal-trigger" data-project="energymeter">
+                <span>View Full Specifications</span>
+                <i data-lucide="external-link" class="btn-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Milestones</span>
+          <h2 class="section-title">Education & Qualifications</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Consistent academic track record rooted in strong technical foundations.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot current-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="timeline-degree">B.Tech / B.E. — Electronics and Communication Engineering</span>
+                <span class="timeline-status-badge">In Progress (Class of 2028)</span>
+              </div>
+              <h4 class="timeline-inst">Kongu Engineering College, Perundurai, Erode</h4>
+              <div class="timeline-score-pill">
+                <i data-lucide="award"></i>
+                <span>CGPA: <strong>7.6 / 10</strong></span>
+              </div>
+              <p class="timeline-details">
+                Pursuing rigorous technical training in embedded systems, digital electronics, microprocessors, signal
+                processing, and communication networks. Actively leading student initiatives and technical project
+                presentations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="timeline-degree">Class XII — Higher Secondary Education</span>
+                <span class="timeline-year">Completed 2024</span>
+              </div>
+              <h4 class="timeline-inst">Saratha Matric Higher Secondary School, Gobichettipalayam, Erode</h4>
+              <div class="timeline-score-pill">
+                <i data-lucide="check"></i>
+                <span>Percentage: <strong>79.8%</strong> (Tamil Nadu State Board)</span>
+              </div>
+              <p class="timeline-details">
+                Excelled in Physics, Chemistry, Mathematics and Computer Science, developing a core foundation in
+                problem-solving and scientific principles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="timeline-degree">Class X — Secondary School Education</span>
+                <span class="timeline-year">Completed 2022</span>
+              </div>
+              <h4 class="timeline-inst">Saratha International Senior Secondary School, Kodiveri, Erode</h4>
+              <div class="timeline-score-pill">
+                <i data-lucide="check"></i>
+                <span>Percentage: <strong>72%</strong> (CBSE Board)</span>
+              </div>
+              <p class="timeline-details">
+                Solid academic grounding with active participation in inter-school science quizzes and extracurricular
+                sporting events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & ACTIVITIES SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Beyond Academics</span>
+          <h2 class="section-title">Presentations & Co-Curricular</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Research presentations, leadership responsibilities, and continuous learning
+            endeavors.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Card 1 -->
+          <div class="achievement-card">
+            <div class="achieve-icon-box">
+              <i data-lucide="newspaper"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">Research Paper</span>
+              <h3 class="achieve-title">Paper Presentation at Scientium 2025</h3>
+              <p class="achieve-sub">Department of Science and Humanities, Kongu Engineering College</p>
+              <p class="achieve-desc">
+                Authored and presented a technical research paper demonstrating emerging concepts in electronics and
+                intelligent instrumentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="achievement-card">
+            <div class="achieve-icon-box">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">Innovation & Hackathons</span>
+              <h3 class="achieve-title">Ideathon 2025 & Technocultural Fest</h3>
+              <p class="achieve-sub">Department of Electronics and Communication Engineering, KEC</p>
+              <p class="achieve-desc">
+                Demonstrated live working embedded prototypes and IoT hardware solutions before academic and industry
+                judges.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="achievement-card">
+            <div class="achieve-icon-box">
+              <i data-lucide="users-2"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">Leadership & Service</span>
+              <h3 class="achieve-title">Event Management at AI Club</h3>
+              <p class="achieve-sub">Active Committee Coordinator (2026-2028)</p>
+              <p class="achieve-desc">
+                Organizing and leading institutional events, coordinating guest logistics, managing participant
+                schedules, and handling stage management with student teams.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="achievement-card">
+            <div class="achieve-icon-box">
+              <i data-lucide="compass"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">Growth & Hobbies</span>
+              <h3 class="achieve-title">Continuous Learning & Sports</h3>
+              <p class="achieve-sub">Personal Enrichment</p>
+              <p class="achieve-desc">
+                Advancing PCB Prototyping and Designing skills,preparing for competitive examinations, and actively
+                playing cricket.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Interested in collaborating on IoT hardware, web development, or exploring
+            internship opportunities? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-col">
+            <h3 class="contact-col-title">Direct Channels</h3>
+            <p class="contact-col-desc">I am actively checking my inbox and LinkedIn. Drop me a note and I'll get back
+              to you promptly.</p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="c-icon"><i data-lucide="mail"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Email</span>
+                  <a href="mailto:barathkishorsc@gmail.com" class="c-value">barathkishorsc@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="barathkishorsc@gmail.com" title="Copy email address">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card">
+                <div class="c-icon"><i data-lucide="phone"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Phone</span>
+                  <a href="tel:+918248830003" class="c-value">+91 82488 30003</a>
+                </div>
+                <button class="copy-btn" data-copy="+918248830003" title="Copy phone number">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="c-icon"><i data-lucide="map-pin"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Anthiyur, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col">
+            <h3 class="contact-col-title">Send a Quick Message</h3>
+            <p class="contact-col-desc">Fill out the fields below to dispatch an email directly or copy the drafted
+              inquiry.</p>
+
+            <form id="portfolio-contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <div class="input-with-icon">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="contact-name" name="name" required placeholder="Barath Kishor">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <div class="input-with-icon">
+                  <i data-lucide="at-sign" class="input-icon"></i>
+                  <input type="email" id="contact-email" name="email" required placeholder="example@gmail.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <div class="input-with-icon">
+                  <i data-lucide="bookmark" class="input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" required
+                    placeholder="Internship Opportunity / Project Inquiry">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required
+                  placeholder="Hello Barath, I came across your portfolio and would like to connect regarding..."></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-full">
+                  <i data-lucide="send" class="btn-icon"></i>
+                  <span>Send Message via Email</span>
+                </button>
+                <button type="button" id="copy-draft-btn" class="btn btn-secondary btn-full">
+                  <i data-lucide="clipboard-copy" class="btn-icon"></i>
+                  <span>Copy Message Template</span>
+                </button>
+              </div>
+
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-monogram">BK</span>
+          <span class="footer-brand-name">Barath Kishor S C</span>
+          <p class="footer-bio">Electronics and Communication Engineering undergraduate at Kongu Engineering College.
+            Innovating at the intersection of embedded electronics and software.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect-col">
+          <h5 class="footer-heading">Connect</h5>
+          <div class="footer-social-icons">
+            <a href="mailto:barathkishorsc@gmail.com" class="social-circle" title="Email Barath">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+918248830003" class="social-circle" title="Call Barath">
+              <i data-lucide="phone"></i>
+            </a>
+            <button type="button" class="social-circle resume-modal-trigger" title="Preview & Download Resume">
+              <i data-lucide="file-text"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Barath Kishor S C All rights reserved.</p>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to top">
+          <i data-lucide="arrow-up"></i>
+          <span>Back to Top</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="modal-card resume-modal-card">
+      <div class="resume-modal-header">
+        <div class="resume-modal-title-group">
+          <div class="resume-title-icon">
+            <i data-lucide="file-text"></i>
+          </div>
+          <div>
+            <h3 class="resume-modal-title" id="resume-modal-title">Barath Kishor S C — Resume</h3>
+            <span class="resume-modal-subtitle">PDF Document Preview</span>
+          </div>
+        </div>
+
+        <div class="resume-modal-actions">
+          <a href="assets/Barath_Kishor_Resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary btn-sm" title="Open PDF in new tab">
+            <i data-lucide="external-link" class="btn-icon"></i>
+            <span>New Tab</span>
+          </a>
+          <a href="assets/Barath_Kishor_Resume.pdf" download="Barath_Kishor_Resume.pdf" class="btn btn-primary btn-sm"
+            title="Download Resume PDF">
+            <i data-lucide="download" class="btn-icon"></i>
+            <span>Download</span>
+          </a>
+          <button class="modal-close-btn resume-modal-close" id="resume-modal-close" aria-label="Close resume preview">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-iframe-container">
+        <iframe src="assets/Barath_Kishor_Resume.pdf#toolbar=1&navpanes=0" class="resume-iframe"
+          title="Barath Kishor Resume Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT MODAL DIALOG -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-content" id="modal-body">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
